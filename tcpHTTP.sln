@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reqParser", "reqParser\reqParser.csproj", "{71AFDB45-B354-4ABB-A019-2CD7D2F81572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tcpHTTP", "tcpHTTP\tcpHTTP.csproj", "{54CC0F82-C465-4394-BF48-AB869CDC3766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{FB1FFEA5-8AB2-4276-9881-84537B7FDB8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71AFDB45-B354-4ABB-A019-2CD7D2F81572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AFDB45-B354-4ABB-A019-2CD7D2F81572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AFDB45-B354-4ABB-A019-2CD7D2F81572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AFDB45-B354-4ABB-A019-2CD7D2F81572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CC0F82-C465-4394-BF48-AB869CDC3766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CC0F82-C465-4394-BF48-AB869CDC3766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CC0F82-C465-4394-BF48-AB869CDC3766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CC0F82-C465-4394-BF48-AB869CDC3766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1FFEA5-8AB2-4276-9881-84537B7FDB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1FFEA5-8AB2-4276-9881-84537B7FDB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1FFEA5-8AB2-4276-9881-84537B7FDB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1FFEA5-8AB2-4276-9881-84537B7FDB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
