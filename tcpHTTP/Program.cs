@@ -311,7 +311,7 @@ namespace HTTPbuilder
 											{
 												if (property.Key != "status" && property.Key != "body")
 												{
-													Response += $"{property.Value}\n";
+													Response += $"{property.Key}:{property.Value}\n";
 												}
 											}
 
