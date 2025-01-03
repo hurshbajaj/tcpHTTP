@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Dynamic;
 using System.Linq;
-//GET /abc HTTP/1.1\nheader:value
 
 namespace parser{
 
@@ -49,7 +48,7 @@ namespace parser{
 			else
 			{
 				Console.WriteLine("Ok....");
-				if (rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\n") || rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + 1 == rawREQ.IndexOf("\n\r"))
+				if (rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\n") || rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\r\n"))
 				    
 				{
 						Console.WriteLine("It does....");
