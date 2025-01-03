@@ -9,6 +9,7 @@ namespace parser{
 
 		internal static void Main()
 		{
+			//Test
 			string raw = "GET /abc HTTP/1.1\nheader:abc";
 			Dictionary<string, string> req = parse(raw);
 			
@@ -38,7 +39,6 @@ namespace parser{
 			List<string> headers = new List<string>();
 			if(body != "")
 			{
-				Console.WriteLine("NOT OK");
 				string? hold = rawREQ.Substring(rawREQ.IndexOf("\n") + 1, rawREQ.Length-rawREQ.IndexOf("\n") - body.Length-2);
 				if (!string.IsNullOrEmpty(hold))
 				{
@@ -47,7 +47,6 @@ namespace parser{
 			}
 			else
 			{
-				Console.WriteLine("Ok....");
 				if (rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\n") || rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\r\n"))
 				    
 				{
@@ -63,10 +62,8 @@ namespace parser{
 			headers = headers.Where(h => !string.IsNullOrEmpty(h)).ToList();
 			if (headers.Count > 0)
 			{
-				Console.WriteLine("Header -> "+headers[0].GetType());
 				foreach (string h in headers)
 				{
-					Console.WriteLine(h);
 					parsedReq.Add(h.Split(':')[0].Trim(), h.Split(':')[1].Trim());
 				}
 			}
