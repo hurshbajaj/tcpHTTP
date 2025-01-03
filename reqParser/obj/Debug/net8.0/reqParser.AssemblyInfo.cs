@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("reqParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63fdcf8243fe0adcd2ad20db6f8c2209dad627d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29b213a5e7c7c5f245371090c20345c957690ed1")]
 [assembly: System.Reflection.AssemblyProductAttribute("reqParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("reqParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

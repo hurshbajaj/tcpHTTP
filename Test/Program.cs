@@ -5,24 +5,26 @@ namespace test
 {
     public class Program
     {
-        public static void Main()
+        public static async Task Main()
         {
-            var args = new HTTPbuild.buildARG(5000, null);
-            var app = new HTTPbuild(args);
+            //GET/abc http/1.1
             
-            app.listen();
-
+            var app = new HTTPbuild(new HTTPbuild.buildARG(5000, null));
+            await app.listen();
+            
             app.handle("GET", "abc", handle);
+            app.handle("POST", "abc", handle);
 
-            static void handle(object req, out Dictionary<string, string> res)
-            {
-                res = HTTPbuild.newRes();
-                res["status"] = "200 OK";
-                res["newProp"] = "Valid";
-                res["body"] = "<html><body><h1>Hello, World!</h1></body></html>";
-            }
-            
+            await app.appendHandlers();
         }
+        static void handle(object req, out Dictionary<string, string> res)
+                    {
+                        res = HTTPbuild.newRes();
+                        res["status"] = "200 OK";
+                        res["newProp"] = "Valid";
+                        res["body"] = "<html><body><h1>Hello, World!</h1></body></html>";
+                    }
+        
     }
 }
 
