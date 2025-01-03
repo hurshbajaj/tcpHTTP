@@ -105,8 +105,23 @@ namespace HTTPbuilder
 							Console.WriteLine("COUGHT");
 							Dictionary<string, string> res = newRes();
 							CHandler(parsedReq, out res);
+							
 							res["status"] = res["status"] == null ? "200 OK" : res["status"];
-							string Response = $"{parsedReq["httpV"]} {res["status"]} \n\n{res["status"]}";
+							
+							string Response = $"{parsedReq["httpV"]} {res["status"]} \n";
+							string resBody = res["body"];
+							foreach (var property in res)
+							{
+								if (property.Key != "status" && property.Key != "body")
+								{
+									Response += $"{property.Value}\n";
+								}
+							}
+
+							if (resBody != null)
+							{
+								Response += $"\n\n{resBody}";
+							}
 
 							Console.WriteLine(Response);
 							writer.WriteLineAsync(Response);
@@ -114,7 +129,7 @@ namespace HTTPbuilder
 					}
 					catch (Exception e)
 					{
-						Console.WriteLine("Expected HTTP/ Bad Request...");
+						Console.WriteLine("Expected HTTP/ Bad Request... " + e);
 						throw e;
 					}
 					

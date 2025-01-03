@@ -12,3 +12,4 @@ C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\reqParser\obj\Debug\net8.0\refint\r
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\reqParser\obj\Debug\net8.0\reqParser.pdb
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\reqParser\obj\Debug\net8.0\reqParser.genruntimeconfig.cache
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\reqParser\obj\Debug\net8.0\ref\reqParser.dll
+C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\reqParser\obj\Debug\net8.0\reqParser.sourcelink.json

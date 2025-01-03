@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Dynamic;
 using System.Linq;
-//GET /abc HTTP/1.1
+//GET /abc HTTP/1.1\nheader:value
 
 namespace parser{
 
@@ -10,7 +10,7 @@ namespace parser{
 
 		internal static void Main()
 		{
-			string raw = "GET /submit-form HTTP/1.1";
+			string raw = "GET /abc HTTP/1.1\nheader:abc";
 			Dictionary<string, string> req = parse(raw);
 			
 			foreach (KeyValuePair<string, string> kvp in req)
@@ -49,9 +49,10 @@ namespace parser{
 			else
 			{
 				Console.WriteLine("Ok....");
-				if (rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + 1 == rawREQ.IndexOf("\n") || rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + 1 == rawREQ.IndexOf("\n\r"))
+				if (rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + rawSubset[2].Split('\n')[0].Length + 5 == rawREQ.IndexOf("\n") || rawREQ.IndexOf("HTTP/" + rawSubset[2].Split('\n')[0]) + 1 == rawREQ.IndexOf("\n\r"))
 				    
 				{
+						Console.WriteLine("It does....");
 						var hold = rawREQ.Substring(rawREQ.IndexOf("\n") + 1, rawREQ.Length-rawREQ.IndexOf("\n")-1);
         				if (!string.IsNullOrEmpty(hold))
         				{

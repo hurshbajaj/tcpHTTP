@@ -19,3 +19,4 @@ C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\tcpHTTP\obj\Debug\net8.0\refint\tcp
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\tcpHTTP\obj\Debug\net8.0\tcpHTTP.pdb
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\tcpHTTP\obj\Debug\net8.0\tcpHTTP.genruntimeconfig.cache
 C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\tcpHTTP\obj\Debug\net8.0\ref\tcpHTTP.dll
+C:\Users\Hursh Bajaj\Desktop\RiderC#\tcpHTTP\tcpHTTP\obj\Debug\net8.0\tcpHTTP.sourcelink.json

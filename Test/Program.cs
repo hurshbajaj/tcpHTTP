@@ -17,7 +17,8 @@ namespace test
             static void handle(object req, out Dictionary<string, string> res)
             {
                 res = HTTPbuild.newRes();
-                res["status"] = "200 OK";  
+                res["status"] = "200 OK";
+                res["newProp"] = "Valid";
                 res["body"] = "<html><body><h1>Hello, World!</h1></body></html>";
             }
             
